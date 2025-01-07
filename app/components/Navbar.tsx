@@ -1,5 +1,5 @@
 "use client"
-import { UserButton, useUser } from '@clerk/nextjs'
+import { UserButton } from '@clerk/nextjs'
 import { Cherry, Menu, X } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
