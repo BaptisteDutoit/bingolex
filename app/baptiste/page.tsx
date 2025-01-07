@@ -65,11 +65,11 @@ export default function Home() {
         </div>
 
         {/* Grille de boutons */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-6 w-full max-w-6xl">
+        <div className="grid grid-cols-5 gap-2 p-6 w-full max-w-6xl">
   {buttonTexts.map((text, i) => (
     <button
       key={i}
-      className={`w-full h-16 sm:h-20 md:h-24 flex items-center justify-center text-center text-xs sm:text-sm md:text-base font-medium border-2 ${
+      className={`w-full h-14 sm:h-16 md:h-20 flex items-center justify-center text-center text-xs sm:text-sm md:text-base font-medium border-2 ${
         selected.includes(i) ? "border-green-500 bg-green-500" : "border-gray-300 bg-primary"
       } rounded-lg cursor-pointer ${
         email !== "dutoit.baptiste@gmail.com" ? "cursor-not-allowed opacity-50" : "hover:shadow-md"
@@ -81,6 +81,7 @@ export default function Home() {
     </button>
   ))}
 </div>
+
       </div>
     </Wrapper>
   );
