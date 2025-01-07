@@ -69,7 +69,7 @@ export default function Home() {
   {buttonTexts.map((text, i) => (
     <button
       key={i}
-      className={`w-full h-20 flex items-center justify-center text-center text-sm font-medium border-2 ${
+      className={`w-full h-16 sm:h-20 md:h-24 flex items-center justify-center text-center text-xs sm:text-sm md:text-base font-medium border-2 ${
         selected.includes(i) ? "border-green-500 bg-green-500" : "border-gray-300 bg-primary"
       } rounded-lg cursor-pointer ${
         email !== "dutoit.baptiste@gmail.com" ? "cursor-not-allowed opacity-50" : "hover:shadow-md"
