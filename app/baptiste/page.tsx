@@ -14,8 +14,8 @@ export default function Home() {
   // Textes des boutons (modifiables)
   const buttonTexts = [
     "Obtenir le CFA 1", "Continuer le foot", "Ecouter des podcasts", "Rester avec Lexane", "Mettre en route INGERIM",
-    "Limiter le VF", "Développer le réseau pro", "Apprendre à cuisiner", "Réussir double diplôme", "Mieux se saper",
-    "Appli mobile perso", "Emmener Lex à Paris", "Bonne suite à alternance", "Spare 250€ par mois", "Newsletter finance",
+    "Limiter le VF", "Avoir l'AMF", "Apprendre à cuisiner", "Réussir double diplôme", "Mieux se saper",
+    "Appli mobile perso", "Emmener Lex à Paris", "Bonne suite à alternance", "Spare 250€/mois", "Newsletter finance",
     "Manger sain", "Outil CTN", "Préparer les USA", "Gérer alternance", "Moins boire",
     "Ne pas lâcher l’allemand", "Rejoindre un autre club", "Appli web perso ", "Le summer body", "Image pro",
   ];
