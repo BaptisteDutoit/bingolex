@@ -49,7 +49,9 @@ export default function Home() {
     <Wrapper>
       <div className="min-h-screen flex flex-col items-center justify-center bg-yellow-100">
         {/* Titre */}
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">Bingo 2025 de Lexane</h1>
+        <h1 className="text-2xl sm:text-4xl font-bold text-gray-800 mb-4">
+          Bingo 2025 de Lexane
+        </h1>
 
         {/* Barre d'avancement */}
         <div className="w-full max-w-3xl mb-10">
@@ -65,14 +67,14 @@ export default function Home() {
         </div>
 
         {/* Grille de boutons */}
-        <div className="grid grid-cols-5 gap-y-10 p-6 w-full max-w-6xl">
+        <div className="grid grid-cols-5 gap-4 sm:gap-6 p-6 w-full max-w-6xl">
           {buttonTexts.map((text, i) => (
             <button
               key={i}
-              className={`w-24 h-20 flex items-center justify-center text-center text-sm font-medium border-2 ${
+              className={`w-16 sm:w-24 h-16 sm:h-20 flex items-center justify-center text-center text-xs sm:text-xs font-medium border-2 ${
                 selected.includes(i) ? "border-green-500 bg-green-500" : "border-gray-300 bg-primary"
               } rounded-lg cursor-pointer ${
-                email !== "lexane.delrue@gmail.com" ? "cursor-not-allowed opacity-100" : "hover:shadow-md"
+                email !== "lexane.delrue@gmail.com" ? "cursor-not-allowed opacity-50" : "hover:shadow-md"
               } transition`}
               onClick={() => handleButtonClick(i)}
               disabled={email !== "lexane.delrue@gmail.com"}
