@@ -65,22 +65,22 @@ export default function Home() {
         </div>
 
         {/* Grille de boutons */}
-        <div className="grid grid-cols-5 gap-y-10 p-6 w-full max-w-6xl">
-          {buttonTexts.map((text, i) => (
-            <button
-              key={i}
-              className={`w-24 h-20 flex items-center justify-center text-center text-sm font-medium border-2 ${
-                selected.includes(i) ? "border-green-500 bg-green-500" : "border-gray-300 bg-primary"
-              } rounded-lg cursor-pointer ${
-                email !== "dutoit.baptiste@gmail.com" ? "cursor-not-allowed opacity-50" : "hover:shadow-md"
-              } transition`}
-              onClick={() => handleButtonClick(i)}
-              disabled={email !== "dutoit.baptiste@gmail.com"}
-            >
-              <span className="text-white px-2">{text}</span>
-            </button>
-          ))}
-        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-6 w-full max-w-6xl">
+  {buttonTexts.map((text, i) => (
+    <button
+      key={i}
+      className={`w-full h-20 flex items-center justify-center text-center text-sm font-medium border-2 ${
+        selected.includes(i) ? "border-green-500 bg-green-500" : "border-gray-300 bg-primary"
+      } rounded-lg cursor-pointer ${
+        email !== "dutoit.baptiste@gmail.com" ? "cursor-not-allowed opacity-50" : "hover:shadow-md"
+      } transition`}
+      onClick={() => handleButtonClick(i)}
+      disabled={email !== "dutoit.baptiste@gmail.com"}
+    >
+      <span className="text-white px-2">{text}</span>
+    </button>
+  ))}
+</div>
       </div>
     </Wrapper>
   );
