@@ -13,11 +13,11 @@ export default function Home() {
 
   // Textes des boutons (modifiables)
   const buttonTexts = [
-    "Obtenir le CFA 1", "Continuer le football en club", "Ecouter des podcasts et pas du Naps", "Rester avec Lexane mon coeur de beurre", "Mettre en route agence INGERIM",
-    "Limiter au max le visionnage VF", "Développer mon réseau professionnel", "Apprendre à cuisiner...un peu", "Réussir mon double diplôme", "Mieux se saper comme jamais",
-    "Développer une appli mobile perso", "Emmener Lex à Paris", "Trouver une bonne suite à mon alternance", "Economiser 250 euros par mois", "Suivi occasionnel d’une newsletter finance",
-    "Manger plus sainement", "Développer un outil de gestion de projet web", "Préparer les USA", "Gérer mon alternance", "Moins boire dans l’excès",
-    "Ne pas lâcher l’allemand", "Rejoindre un autre club de foot en France", "Créer une appli web perso ", "Le summer body inchallaaaah", "Mettre à jour mon image pro",
+    "Obtenir le CFA 1", "Continuer le foot", "Ecouter des podcasts", "Rester avec Lexane", "Mettre en route INGERIM",
+    "Limiter le visionnage VF", "Développer réseau pro", "Apprendre à cuisiner", "Réussir double diplôme", "Mieux se saper",
+    "Appli mobile perso", "Emmener Lex à Paris", "Bonne suite à alternance", "Economiser 250€ par mois", "Newsletter finance",
+    "Manger sain", "Outil de gestion de projet web", "Préparer les USA", "Gérer alternance", "Moins boire",
+    "Ne pas lâcher l’allemand", "Rejoindre un autre club", "Appli web perso ", "Le summer body", "Image pro",
   ];
 
   // Charger les données sauvegardées au démarrage

@@ -14,10 +14,10 @@ export default function Home() {
   // Textes des boutons (modifiables)
   const buttonTexts = [
     "Aller à la salle", "Me cultiver", "Courir 10 km", "Aller à New York", "Boire plus d'eau",
-    "Faire plein de trucs avec Cha", "Me faire un max de blé", "Être moins susceptible", "Avoir mon S1", "Faire de la place sur mon tel",
-    "Avoir mon corps de rêve", "Aller à Paris", "Être heureuse", "Lire des livres", "Vacances au soleil",
-    "Créer mon business", "Adopter un nouveau Jellycat", "Faire de activités manuelles", "Avoir le NYTC", "Apprendre l'allemand",
-    "Skin Care", "Avoir mon Master", "Cuisiner à la maison", "Baptiste <3", "Avoir les cheveux longs",
+    "Hang out with Cha", "Faire un max de blé", "Être - suce eptible", "Avoir mon S1", "Libérer de l'espace",
+    "Corps de rêve", "Aller à Paris", "Être heureuse", "Lire des livres", "Vacances au soleil",
+    "Créer mon business", "Nouveau Jellycat", "Faire des activités manuelles", "Avoir le NYTC", "Apprendre l'allemand",
+    "Skin Care", "Avoir mon Master", "Cuisiner à la maison", "Baptiste <3", "Cheveux longs",
   ];
 
   // Charger les données sauvegardées au démarrage
