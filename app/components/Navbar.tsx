@@ -37,9 +37,9 @@ const Navbar = () => {
                     <div className='bg-primary-content text-primary rounded-full p-2'>
                         <Cherry className='w-6 h-6' />
                     </div>
-                    <span className='ml-3 font-bold text-3xl'>
+                    <Link href="/" className="ml-3 font-bold text-3xl">
                         Bingo<span className='text-primary'>Lex</span>
-                    </span>
+                    </Link>
                 </div>
 
                 <button className='btn w-fit btn-sm sm:hidden' onClick={() => setMenuOpen(!menuOpen)}>

@@ -48,43 +48,40 @@ export default function Home() {
   return (
     <Wrapper>
       <div className="min-h-screen flex flex-col items-center justify-center bg-yellow-100">
-  {/* Titre */}
-  <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-    Bingo 2025 de Baptiste
-  </h1>
+        {/* Titre */}
+        <h1 className="text-4xl font-bold text-gray-800 mb-4">Bingo 2025 de Baptiste</h1>
 
-  {/* Barre d'avancement */}
-  <div className="w-full max-w-3xl mb-10">
-    <p className="text-center text-gray-700 mb-2 font-medium">
-      Progression : {percentage}%
-    </p>
-    <div className="w-full bg-gray-300 h-4 rounded-full overflow-hidden">
-      <div
-        className="bg-green-500 h-full transition-all duration-300"
-        style={{ width: `${percentage}%` }}
-      ></div>
-    </div>
-  </div>
+        {/* Barre d'avancement */}
+        <div className="w-full max-w-3xl mb-10">
+          <p className="text-center text-gray-700 mb-2 font-medium">
+            Progression : {percentage}%
+          </p>
+          <div className="w-full bg-gray-300 h-4 rounded-full overflow-hidden">
+            <div
+              className="bg-green-500 h-full transition-all duration-300"
+              style={{ width: `${percentage}%` }}
+            ></div>
+          </div>
+        </div>
 
-  {/* Grille de boutons */}
-  <div className="grid grid-cols-5 gap-2 p-6 w-full max-w-6xl">
-    {buttonTexts.map((text, i) => (
-      <button
-        key={i}
-        className={`w-full h-14 sm:h-16 md:h-20 flex items-center justify-center text-center text-xxs sm:text-xs md:text-sm font-medium border-2 ${
-          selected.includes(i) ? "border-green-500 bg-green-500" : "border-gray-300 bg-primary"
-        } rounded-lg cursor-pointer ${
-          email !== "dutoit.baptiste@gmail.com" ? "cursor-not-allowed opacity-50" : "hover:shadow-md"
-        } transition`}
-        onClick={() => handleButtonClick(i)}
-        disabled={email !== "dutoit.baptiste@gmail.com"}
-      >
-        <span className="text-white px-2">{text}</span>
-      </button>
-    ))}
-  </div>
-</div>
-
+        {/* Grille de boutons */}
+        <div className="grid grid-cols-5 gap-y-10 p-6 w-full max-w-6xl">
+          {buttonTexts.map((text, i) => (
+            <button
+              key={i}
+              className={`w-24 h-20 flex items-center justify-center text-center text-sm font-medium border-2 ${
+                selected.includes(i) ? "border-green-500 bg-green-500" : "border-gray-300 bg-primary"
+              } rounded-lg cursor-pointer ${
+                email !== "dutoit.baptiste@gmail.com" ? "cursor-not-allowed opacity-50" : "hover:shadow-md"
+              } transition`}
+              onClick={() => handleButtonClick(i)}
+              disabled={email !== "dutoit.baptiste@gmail.com"}
+            >
+              <span className="text-white px-2">{text}</span>
+            </button>
+          ))}
+        </div>
+      </div>
     </Wrapper>
   );
 }
