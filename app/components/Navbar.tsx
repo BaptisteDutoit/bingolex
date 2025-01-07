@@ -4,10 +4,9 @@ import { Cherry, Menu, X } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 const Navbar = () => {
-    const { user } = useUser()
     const [menuOpen, setMenuOpen] = useState(false)
     const pathname = usePathname()
 
